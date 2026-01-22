@@ -1,0 +1,56 @@
+.sentinel {
+    position: absolute;
+    top: 0;
+    height: 1px;
+    width: 100%;
+    pointer-events: none;
+}
+
+.loadingMore {
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-3) 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.list {
+  flex: 1;
+  overflow-y: auto;
+  contain: strict;
+  
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--overlay-darker);
+    border-radius: 3px;
+    
+    &:hover {
+      background-color: var(--overlay-darkest);
+    }
+  }
+  
+  scrollbar-width: thin;
+  scrollbar-color: var(--overlay-darker) transparent;
+}
+
+.virtualContainer {
+  position: relative;
+  width: 100%;
+}
+
+.virtualItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
