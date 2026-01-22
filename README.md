@@ -64,6 +64,7 @@ The app will be available at `http://localhost:5173`.
 - **Real-time messaging** - Send and receive messages instantly
 - **Infinite scroll** - Load older messages by scrolling up
 - **Optimistic updates** - Messages appear immediately while being sent
+- **Dynamic page title** - Shows sending count in browser tab (e.g., "(2) Sending... - Chat")
 
 ### Message States
 - **Sending** - Shows a loading spinner while the message is being sent
